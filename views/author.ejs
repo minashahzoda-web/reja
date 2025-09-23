@@ -1,219 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/main.css" />
     <title>CV</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="frame">
-        <div class="main_frame">
-            <div class="left_frame">
-                <div class="left_1">
-                    <div class="left_1-1">
-                        <img src="images/profile.svg" width="156px" height="142px" alt="" />
-                    </div>
-                    <div class="left_1-2"><%=user.name%></div>
-                    <div class="left_1-3"><%=user.profession%></div>
-                    <div class="left-icons">
-                        <a class="link_href" href="">
-                            <div class="icon">
-                                <img src="icon/Icons-dribbble.svg" class="icon-1" alt="">
-                            </div>
-                        </a>
-                        <a class="link_href" href="">
-                            <div class="icon">
-                                <img src="icon/Icons-facebook.svg" class="icon-1" alt="">
-                            </div>
-                        </a>
-                        <a class="link_href" href="">
-                            <div class="icon">
-                                <img src="icon/Icons-instagram.svg" class="icon-1" alt="">
-                            </div>
-                        </a>
-                        <a class="link_href" href="">
-                            <div class="icon">
-                                <img src="icon/Icons-linkedin.svg" class="icon-1" alt="">
-                            </div>
-                        </a>
-                        <a class="link_href" href="">
-                            <div class="icon">
-                                <img src="icon/Icons-twitter.svg" class="icon-1" alt="">
-                            </div>
-                        </a>
-                        <a class="link_href" href="">
-                            <div class="icon">
-                                <img src="icon/Icons-Youtube.svg" class="icon-1" alt="">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="margener"></div>
-                <div class="left_2">
-                    <div class="left_2-2">
-                        <p class="left-info">Age: </p>
-                        <p><%=user.age%></p>
-                    </div>
-                    <div class="left_2-2">
-                        <p class="left-info">Residence: </p>
-                        <p><%=user.residence%></p>
-                    </div>
-                    <div class="left_2-2">
-                        <p class="left-info">Freelance: </p>
-                        <p>Available</p>
-                    </div>
-                    <div class="left_2-2">
-                        <p class="left-info">Address: </p>
-                        <p><%=user.address%></p>
-                    </div>
-                </div>
-                <div class="margener"></div>
-                <div class="left-3">
-                    <p class="left_titles">Languages</p>
-                        <div class="left_3-lang">
-                            <p><%=user.language[0]%></p>
-                            <p>100%</p>
-                        </div>
-                        <div class="left_titles">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="222" height="6" viewBox="0 0 222 6" fill="none">
-                                <rect x="0.75" y="0.75" width="220.5" height="4.5" rx="2.25" stroke="#FFB400" stroke-width="0.5"/>
-                                <rect x="2" y="2" width="217" height="2" rx="1" fill="#FFB400"/>
-                            </svg>
-                        </div>
-                        <div class="left_3-lang">
-                            <p><%=user.language[1]%></p>
-                            <p>80%</p>
-                        </div>
-                         <div class="left_titles">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="222" height="6" viewBox="0 0 222 6" fill="none">
-                                <rect x="0.75" y="0.75" width="220.5" height="4.5" rx="2.25" stroke="#FFB400" stroke-width="0.5"/>
-                                <rect x="2" y="2" width="208" height="2" rx="1" fill="#FFB400"/>
-                            </svg>
-                        </div>
-                        <div class="left_3-lang">
-                            <p><%=user.language[2]%></p>
-                            <p>60%</p>
-                        </div>
-                         <div class="left_titles">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="222" height="6" viewBox="0 0 222 6" fill="none">
-                                 <rect x="0.75" y="0.75" width="220.5" height="4.5" rx="2.25" stroke="#FFB400" stroke-width="0.5"/>
-                                 <rect x="2" y="2" width="190" height="2" rx="1" fill="#FFB400"/>
-                            </svg>
-                        </div>
-                </div>
-                <div class="margener"></div>
-                <div class="left-4">
-                     <p class="left_titles">Skills</p>
-                     <div class="left_3-lang">
-                        <p><%=user.skills[0]%></p>
-                        <p>90%</p>
-                     </div>
-                           <div class="left_titles">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="222" height="6" viewBox="0 0 222 6" fill="none">
-                                   <rect x="0.75" y="0.75" width="220.5" height="4.5" rx="2.25" stroke="#FFB400" stroke-width="0.5"/>
-                                  <rect x="2" y="2" width="209" height="2" rx="1" fill="#FFB400"/>
-                          </svg>
-                           </div>
-                     <div class="left_3-lang">
-                        <p><%=user.skills[1]%></p>
-                        <p>85%</p>
-                     </div>
-                          <div class="left_titles">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="222" height="6" viewBox="0 0 222 6" fill="none">
-                              <rect x="0.75" y="0.75" width="220.5" height="4.5" rx="2.25" stroke="#FFB400" stroke-width="0.5"/>
-                             <rect x="2" y="2" width="207" height="2" rx="1" fill="#FFB400"/>
-                        </svg>
-                          </div>
-                     <div class="left_3-lang">
-                        <p><%=user.skills[2]%></p>
-                        <p>80%</p>
-                     </div>
-                          <div class="left_titles">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="222" height="6" viewBox="0 0 222 6" fill="none">
-                                <rect x="0.75" y="0.75" width="220.5" height="4.5" rx="2.25" stroke="#FFB400" stroke-width="0.5"/>
-                                 <rect x="2" y="2" width="201" height="2" rx="1" fill="#FFB400"/>
-                           </svg>
-                          </div>
-                     <div class="left_3-lang">
-                        <p><%=user.skills[3]%></p>
-                        <p>75%</p>
-                     </div>
-                         <div class="left_titles">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="222" height="6" viewBox="0 0 222 6" fill="none">
-                            <rect x="0.75" y="0.75" width="220.5" height="4.5" rx="2.25" stroke="#FFB400" stroke-width="0.5"/>
-                             <rect x="2" y="2" width="187" height="2" rx="1" fill="#FFB400"/>
-                        </svg>
-                         </div>
-                     <div class="left_3-lang">
-                        <p><%=user.skills[4]%></p>
-                        <p>85%</p>
-                     </div>
-                        <div class="left_titles">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="222" height="6" viewBox="0 0 222 6" fill="none">
-                            <rect x="0.75" y="0.75" width="220.5" height="4.5" rx="2.25" stroke="#FFB400" stroke-width="0.5"/>
-                             <rect x="2" y="2" width="207" height="2" rx="1" fill="#FFB400"/>
-                        </svg>
-                        </div>
-                    
-                </div>
-                <div class="margener"></div>
-                <div class="left-5">
-                    <p class="left_titles">Extra Skills</p>
-                    <div class="left_last">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-                            <rect x="0.5" y="0.5" width="9" height="9" stroke="#FFB400"/>
-                             <rect x="5.5" y="5.5" width="9" height="9" stroke="#FFB400"/>
-                        </svg>
-                        <p><%=user.extra_skills[0]%></p>
-                    </div>
-                    <div class="left_last">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-                            <rect x="0.5" y="0.5" width="9" height="9" stroke="#FFB400"/>
-                             <rect x="5.5" y="5.5" width="9" height="9" stroke="#FFB400"/>
-                        </svg>
-                        <p><%=user.extra_skills[1]%></p>
-                    </div>
-                    <div class="left_last">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-                            <rect x="0.5" y="0.5" width="9" height="9" stroke="#FFB400"/>
-                             <rect x="5.5" y="5.5" width="9" height="9" stroke="#FFB400"/>
-                        </svg>
-                        <p><%=user.extra_skills[2]%></p>
-                    </div>
-                    <div class="left_last">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-                            <rect x="0.5" y="0.5" width="9" height="9" stroke="#FFB400"/>
-                             <rect x="5.5" y="5.5" width="9" height="9" stroke="#FFB400"/>
-                        </svg>
-                        <p><%=user.extra_skills[3]%></p>
-                    </div>
-                </div>
-                <div class="margener"></div>
+      <div class="main_frame">
+        <div class="left_frame">
+          <div class="left_1">
+            <div class="left_1-1">
+              <img
+                src="images/profile.svg"
+                width="156px"
+                height="142px"
+                alt=""
+              />
             </div>
-            <div class="midd_frame">
-                <div class="midd_main">
-                    <div>
-                        <p class="main_info"><%=user.profession%></p>
-                        <p class="main_info"><%=user.work_place%></p>
-                        <p><%=user.service_desc%></p>
-                    </div>
-                    <div>
-                        <img src="images/mainimage.png" alt="">
-                    </div>
-                    
+            <div class="left_1-2"><%=user.name%></div>
+            <div class="left_1-3"><%=user.profession%></div>
+            <div class="left-icons">
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img src="icon/Icons-dribbble.svg" class="icon-1" alt="" />
                 </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img src="icon/Icons-facebook.svg" class="icon-1" alt="" />
+                </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img src="icon/Icons-instagram.svg" class="icon-1" alt="" />
+                </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img src="icon/Icons-linkedin.svg" class="icon-1" alt="" />
+                </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img src="icon/Icons-twitter.svg" class="icon-1" alt="" />
+                </div>
+              </a>
+              <a class="link_href" href="">
+                <div class="icon">
+                  <img src="icon/Icons-Youtube.svg" class="icon-1" alt="" />
+                </div>
+              </a>
             </div>
-            <div class="right_frame"></div>
+          </div>
+          <div class="margener"></div>
+          <div class="left_2">
+            <div class="left_2-2">
+              <p class="left-info">Age:</p>
+              <p><%=user.age%></p>
+            </div>
+            <div class="left_2-2">
+              <p class="left-info">Residence:</p>
+              <p><%=user.residence%></p>
+            </div>
+            <div class="left_2-2">
+              <p class="left-info">Freelance:</p>
+              <p>Available</p>
+            </div>
+            <div class="left_2-2">
+              <p class="left-info">Address:</p>
+              <p><%=user.address%></p>
+            </div>
+          </div>
+          <div class="margener"></div>
+          <div class="left-3">
+            <p class="left_titles">Languages</p>
+            <div class="left_3-lang">
+              <p><%=user.language[0]%></p>
+              <p>100%</p>
+            </div>
+            <div class="left_titles">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="222"
+                height="6"
+                viewBox="0 0 222 6"
+                fill="none"
+              >
+                <rect
+                  x="0.75"
+                  y="0.75"
+                  width="220.5"
+                  height="4.5"
+                  rx="2.25"
+                  stroke="#FFB400"
+                  stroke-width="0.5"
+                />
+                <rect
+                  x="2"
+                  y="2"
+                  width="217"
+                  height="2"
+                  rx="1"
+                  fill="#FFB400"
+                />
+              </svg>
+            </div>
+            <div class="left_3-lang">
+              <p><%=user.language[1]%></p>
+              <p>80%</p>
+            </div>
+            <div class="left_titles">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="222"
+                height="6"
+                viewBox="0 0 222 6"
+                fill="none"
+              >
+                <rect
+                  x="0.75"
+                  y="0.75"
+                  width="220.5"
+                  height="4.5"
+                  rx="2.25"
+                  stroke="#FFB400"
+                  stroke-width="0.5"
+                />
+                <rect
+                  x="2"
+                  y="2"
+                  width="208"
+                  height="2"
+                  rx="1"
+                  fill="#FFB400"
+                />
+              </svg>
+            </div>
+            <div class="left_3-lang">
+              <p><%=user.language[2]%></p>
+              <p>60%</p>
+            </div>
+            <div class="left_titles">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="222"
+                height="6"
+                viewBox="0 0 222 6"
+                fill="none"
+              >
+                <rect
+                  x="0.75"
+                  y="0.75"
+                  width="220.5"
+                  height="4.5"
+                  rx="2.25"
+                  stroke="#FFB400"
+                  stroke-width="0.5"
+                />
+                <rect
+                  x="2"
+                  y="2"
+                  width="190"
+                  height="2"
+                  rx="1"
+                  fill="#FFB400"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="margener"></div>
+          <div class="left-4">
+            <p class="left_titles">Skills</p>
+            <div class="left_3-lang">
+              <p><%=user.skills[0]%></p>
+              <p>90%</p>
+            </div>
+            <div class="left_titles">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="222"
+                height="6"
+                viewBox="0 0 222 6"
+                fill="none"
+              >
+                <rect
+                  x="0.75"
+                  y="0.75"
+                  width="220.5"
+                  height="4.5"
+                  rx="2.25"
+                  stroke="#FFB400"
+                  stroke-width="0.5"
+                />
+                <rect
+                  x="2"
+                  y="2"
+                  width="209"
+                  height="2"
+                  rx="1"
+                  fill="#FFB400"
+                />
+              </svg>
+            </div>
+            <div class="left_3-lang">
+              <p><%=user.skills[1]%></p>
+              <p>85%</p>
+            </div>
+            <div class="left_titles">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="222"
+                height="6"
+                viewBox="0 0 222 6"
+                fill="none"
+              >
+                <rect
+                  x="0.75"
+                  y="0.75"
+                  width="220.5"
+                  height="4.5"
+                  rx="2.25"
+                  stroke="#FFB400"
+                  stroke-width="0.5"
+                />
+                <rect
+                  x="2"
+                  y="2"
+                  width="207"
+                  height="2"
+                  rx="1"
+                  fill="#FFB400"
+                />
+              </svg>
+            </div>
+            <div class="left_3-lang">
+              <p><%=user.skills[2]%></p>
+              <p>80%</p>
+            </div>
+            <div class="left_titles">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="222"
+                height="6"
+                viewBox="0 0 222 6"
+                fill="none"
+              >
+                <rect
+                  x="0.75"
+                  y="0.75"
+                  width="220.5"
+                  height="4.5"
+                  rx="2.25"
+                  stroke="#FFB400"
+                  stroke-width="0.5"
+                />
+                <rect
+                  x="2"
+                  y="2"
+                  width="201"
+                  height="2"
+                  rx="1"
+                  fill="#FFB400"
+                />
+              </svg>
+            </div>
+            <div class="left_3-lang">
+              <p><%=user.skills[3]%></p>
+              <p>75%</p>
+            </div>
+            <div class="left_titles">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="222"
+                height="6"
+                viewBox="0 0 222 6"
+                fill="none"
+              >
+                <rect
+                  x="0.75"
+                  y="0.75"
+                  width="220.5"
+                  height="4.5"
+                  rx="2.25"
+                  stroke="#FFB400"
+                  stroke-width="0.5"
+                />
+                <rect
+                  x="2"
+                  y="2"
+                  width="187"
+                  height="2"
+                  rx="1"
+                  fill="#FFB400"
+                />
+              </svg>
+            </div>
+            <div class="left_3-lang">
+              <p><%=user.skills[4]%></p>
+              <p>85%</p>
+            </div>
+            <div class="left_titles">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="222"
+                height="6"
+                viewBox="0 0 222 6"
+                fill="none"
+              >
+                <rect
+                  x="0.75"
+                  y="0.75"
+                  width="220.5"
+                  height="4.5"
+                  rx="2.25"
+                  stroke="#FFB400"
+                  stroke-width="0.5"
+                />
+                <rect
+                  x="2"
+                  y="2"
+                  width="207"
+                  height="2"
+                  rx="1"
+                  fill="#FFB400"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="margener"></div>
+          <div class="left-5">
+            <p class="left_titles">Extra Skills</p>
+            <div class="left_last">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                fill="none"
+              >
+                <rect x="0.5" y="0.5" width="9" height="9" stroke="#FFB400" />
+                <rect x="5.5" y="5.5" width="9" height="9" stroke="#FFB400" />
+              </svg>
+              <p><%=user.extra_skills[0]%></p>
+            </div>
+            <div class="left_last">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                fill="none"
+              >
+                <rect x="0.5" y="0.5" width="9" height="9" stroke="#FFB400" />
+                <rect x="5.5" y="5.5" width="9" height="9" stroke="#FFB400" />
+              </svg>
+              <p><%=user.extra_skills[1]%></p>
+            </div>
+            <div class="left_last">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                fill="none"
+              >
+                <rect x="0.5" y="0.5" width="9" height="9" stroke="#FFB400" />
+                <rect x="5.5" y="5.5" width="9" height="9" stroke="#FFB400" />
+              </svg>
+              <p><%=user.extra_skills[2]%></p>
+            </div>
+            <div class="left_last">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+                fill="none"
+              >
+                <rect x="0.5" y="0.5" width="9" height="9" stroke="#FFB400" />
+                <rect x="5.5" y="5.5" width="9" height="9" stroke="#FFB400" />
+              </svg>
+              <p><%=user.extra_skills[3]%></p>
+            </div>
+          </div>
+          <div class="margener"></div>
         </div>
+        <div class="midd_frame">
+          <div class="midd_main">
+            <div>
+              <p class="main_info"><%=user.profession%></p>
+              <p class="main_info"><%=user.work_place%></p>
+              <p><%=user.service_desc%></p>
+            </div>
+            <div>
+              <img src="images/mainimage.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="right_frame"></div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>

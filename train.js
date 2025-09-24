@@ -81,17 +81,38 @@
 // run();
 
 
-let newArray = 0;
-function countLetter(letter, word) {
-    newArray = word.split("").filter(element => element.toLowerCase() === letter.toLowerCase());
+// let newArray = 0;
+// function countLetter(letter, word) {
+//     newArray = word.split("").filter(element => element.toLowerCase() === letter.toLowerCase());
 
-    if(newArray.length == 0) {
-        console.log("Topilmadi");
-    }
+//     if(newArray.length == 0) {
+//         console.log("Topilmadi");
+//     }
          
-        return {
-            newArray
-        };
-}
-countLetter("i", "MIT")
-console.log(`Harflar: ${newArray}, soni ${newArray.length}`);
+//         return {
+//             newArray
+//         };
+// }
+// countLetter("i", "MIT")
+// console.log(`Harflar: ${newArray}, soni ${newArray.length}`);
+
+
+// // DEFINE
+// function qoldiqliBolish(a, b, callback) {
+//   if (b === 0) {
+//     callback("Mahraj nolga teng emas!", null);
+//   } else {
+//     const c = a % b;
+//     callback(null, c);
+//   }
+// }
+
+// // CALL
+// qoldiqliBolish(7, 5, (err, data) => {
+//   if (err) {
+//     console.log("ERROR:", err);
+//   } else {
+//     console.log("data:", data);
+//     console.log("MANTIQLAR...");
+//   }
+// });

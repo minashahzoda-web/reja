@@ -116,3 +116,20 @@
 //     console.log("MANTIQLAR...");
 //   }
 // });
+
+
+
+//Define
+
+function raqamlar(a) {
+    let raqam = 0;
+    for(let i = 0; i < a.length; i++) {
+        const c = a[i];
+        if(c >= '0' && c<= '9') {
+            raqam++;
+        }
+    }
+    return raqam;
+}
+
+console.log(raqamlar("sdg3435jy23"));

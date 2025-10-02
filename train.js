@@ -131,48 +131,61 @@
 
 // console.log(raqamlar("sdg3435jy23"));
 
-//TASK C
+// //TASK C
 
-const moment = require("moment");
-const time = moment().format('HH:mm');
-console.log(time);
+// const moment = require("moment");
+// const time = moment().format('HH:mm');
+// console.log(time);
 
 
-class Shop {
-    constructor(nonNumber, lagmonNumber, colaNumber) {
-        this.nonNumber = nonNumber;
-        this.lagmonNumber = lagmonNumber;
-        this.colaNumber = colaNumber;
-    }
+// class Shop {
+//     constructor(nonNumber, lagmonNumber, colaNumber) {
+//         this.nonNumber = nonNumber;
+//         this.lagmonNumber = lagmonNumber;
+//         this.colaNumber = colaNumber;
+//     }
 
-    qoldiq() {
-        console.log(`Hozir ${time} da ${this.nonNumber} ta non, ${this.lagmonNumber} ta lagmon, ${this.colaNumber} ta cola mavjud`);
-    }
+//     qoldiq() {
+//         console.log(`Hozir ${time} da ${this.nonNumber} ta non, ${this.lagmonNumber} ta lagmon, ${this.colaNumber} ta cola mavjud`);
+//     }
 
-    sotish(number1, number2, number3) {
-        if(number1 > 0 && number1 <= this.nonNumber && number2 > 0 && number2 <= this.lagmonNumber && number3 > 0 && number3 <= this.colaNumber) {
-            this.nonNumber -= number1;
-            this.lagmonNumber -= number2;
-            this.colaNumber -= number3; 
-            console.log( `Hozir ${time} da ${this.nonNumber} ta non, ${this.lagmonNumber} ta lagmon, ${this.colaNumber} ta cola mavjud`);
-        } else {
-            console.log("Mahsulot siz kiritgan miqdordan kam");
-        }
-    }
+//     sotish(number1, number2, number3) {
+//         if(number1 > 0 && number1 <= this.nonNumber && number2 > 0 && number2 <= this.lagmonNumber && number3 > 0 && number3 <= this.colaNumber) {
+//             this.nonNumber -= number1;
+//             this.lagmonNumber -= number2;
+//             this.colaNumber -= number3; 
+//             console.log( `Hozir ${time} da ${this.nonNumber} ta non, ${this.lagmonNumber} ta lagmon, ${this.colaNumber} ta cola mavjud`);
+//         } else {
+//             console.log("Mahsulot siz kiritgan miqdordan kam");
+//         }
+//     }
 
-    qabul(number1, number2, number3) {
-        if(number1 > 0 && number2 > 0 && number3 > 0 ) {
-            this.nonNumber += number1;
-            this.lagmonNumber += number2;
-            this.colaNumber += number3; 
-            console.log( `Hozir ${time} da ${this.nonNumber} ta non, ${this.lagmonNumber} ta lagmon, ${this.colaNumber} ta cola mavjud`);
-        } else {
-            console.log("Barcha mahsulot miqdorini musbat holda kiriting");
-        }
-    }
+//     qabul(number1, number2, number3) {
+//         if(number1 > 0 && number2 > 0 && number3 > 0 ) {
+//             this.nonNumber += number1;
+//             this.lagmonNumber += number2;
+//             this.colaNumber += number3; 
+//             console.log( `Hozir ${time} da ${this.nonNumber} ta non, ${this.lagmonNumber} ta lagmon, ${this.colaNumber} ta cola mavjud`);
+//         } else {
+//             console.log("Barcha mahsulot miqdorini musbat holda kiriting");
+//         }
+//     }
 
+// }
+
+// const shop = new Shop(5,6,7);
+// shop.sotish(1,1,3);
+// shop.qabul(5,6,3)
+
+// MITASK D
+
+function checkContent(word1, word2) {
+    let w1 = [...word1];
+    let w2 = [...word2];
+    let result = w1.every(letter => {
+        w2.includes(letter)
+    });
+    return result;
 }
 
-const shop = new Shop(5,6,7);
-shop.sotish(1,1,3);
-shop.qabul(5,6,3)
+console.log(checkContent("madina", "madina"));

@@ -180,12 +180,15 @@
 // MITASK D
 
 function checkContent(word1, word2) {
-    let w1 = [...word1];
-    let w2 = [...word2];
-    let result = w1.every(letter => {
-        w2.includes(letter)
-    });
+    let w1 = [...word1].sort();
+    let w2 = [...word2].sort();
+    let result = w1.every((e, i) => {
+        return e == w2[i]
+    })
     return result;
 }
 
-console.log(checkContent("madina", "madina"));
+console.log(checkContent("bbs", "bbhs"));
+console.log(checkContent("madina", "anidam"));
+
+

@@ -179,16 +179,27 @@
 
 // MITASK D
 
-function checkContent(word1, word2) {
-    let w1 = [...word1].sort();
-    let w2 = [...word2].sort();
-    let result = w1.every((e, i) => {
-        return e == w2[i]
-    })
-    return result;
+// function checkContent(word1, word2) {
+//     let w1 = [...word1].sort();
+//     let w2 = [...word2].sort();
+//     let result = w1.every((e, i) => {
+//         return e == w2[i]
+//     })
+//     return result;
+// }
+
+// console.log(checkContent("bbs", "bbhs"));
+// console.log(checkContent("madina", "anidam"));
+
+
+// MITASK E
+
+function teskariSoz(stringSoz) {
+    let new_soz = [...stringSoz].reverse();
+    let new2 = new_soz.join("")
+    console.log(new2);
+    
 }
 
-console.log(checkContent("bbs", "bbhs"));
-console.log(checkContent("madina", "anidam"));
-
+teskariSoz("oquvchilar")
 

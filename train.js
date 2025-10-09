@@ -8,7 +8,6 @@
 //     "endi dam oling foydasi yoq endi" // 60
 // ];
 
-
 // //callback
 // function maslahatBering(a, callback) {
 //     if(typeof a !== 'number') callback("insert a number", null);
@@ -19,7 +18,7 @@
 //     else if(a < 50 && a <= 60) callback(null, list[4]);
 //     else {
 //         setTimeout(function () {
-//            callback(null, list[5]); 
+//            callback(null, list[5]);
 //         }, 5000);
 //     }
 // }
@@ -29,7 +28,6 @@
 //     if(err) console.log('ERROR:', err);
 //     console.log('javob', data);
 // });
-
 
 // console.log("Jack Ma maslahatlari");
 // const list = [
@@ -68,7 +66,6 @@
 // });
 // console.log('passed here 1');
 
-
 // //async/await
 // async function run() {
 //     let javob = await maslahatBering(25);
@@ -80,7 +77,6 @@
 // }
 // run();
 
-
 // let newArray = 0;
 // function countLetter(letter, word) {
 //     newArray = word.split("").filter(element => element.toLowerCase() === letter.toLowerCase());
@@ -88,14 +84,13 @@
 //     if(newArray.length == 0) {
 //         console.log("Topilmadi");
 //     }
-         
+
 //         return {
 //             newArray
 //         };
 // }
 // countLetter("i", "MIT")
 // console.log(`Harflar: ${newArray}, soni ${newArray.length}`);
-
 
 // // DEFINE
 // function qoldiqliBolish(a, b, callback) {
@@ -117,7 +112,6 @@
 //   }
 // });
 
-
 // function raqamlar(a) {
 //     let raqam = 0;
 //     for(let i = 0; i < a.length; i++) {
@@ -137,7 +131,6 @@
 // const time = moment().format('HH:mm');
 // console.log(time);
 
-
 // class Shop {
 //     constructor(nonNumber, lagmonNumber, colaNumber) {
 //         this.nonNumber = nonNumber;
@@ -153,7 +146,7 @@
 //         if(number1 > 0 && number1 <= this.nonNumber && number2 > 0 && number2 <= this.lagmonNumber && number3 > 0 && number3 <= this.colaNumber) {
 //             this.nonNumber -= number1;
 //             this.lagmonNumber -= number2;
-//             this.colaNumber -= number3; 
+//             this.colaNumber -= number3;
 //             console.log( `Hozir ${time} da ${this.nonNumber} ta non, ${this.lagmonNumber} ta lagmon, ${this.colaNumber} ta cola mavjud`);
 //         } else {
 //             console.log("Mahsulot siz kiritgan miqdordan kam");
@@ -164,7 +157,7 @@
 //         if(number1 > 0 && number2 > 0 && number3 > 0 ) {
 //             this.nonNumber += number1;
 //             this.lagmonNumber += number2;
-//             this.colaNumber += number3; 
+//             this.colaNumber += number3;
 //             console.log( `Hozir ${time} da ${this.nonNumber} ta non, ${this.lagmonNumber} ta lagmon, ${this.colaNumber} ta cola mavjud`);
 //         } else {
 //             console.log("Barcha mahsulot miqdorini musbat holda kiriting");
@@ -191,15 +184,32 @@
 // console.log(checkContent("bbs", "bbhs"));
 // console.log(checkContent("madina", "anidam"));
 
+// // MITASK E
 
-// MITASK E
+// function teskariSoz(stringSoz) {
+//     let new_soz = [...stringSoz].reverse();
+//     let new2 = new_soz.join("")
+//     console.log(new2);
 
-function teskariSoz(stringSoz) {
-    let new_soz = [...stringSoz].reverse();
-    let new2 = new_soz.join("")
-    console.log(new2);
-    
+// }
+
+// teskariSoz("oquvchilar")
+
+// MITASK F
+
+function findDoublers(word) {
+  let words = [...word];
+  let sanoq = 0;
+  words.some((ele, index) => {
+    if (ele == words[index + 1]) {
+      sanoq++;
+    }
+  });
+  if (sanoq > 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
-
-teskariSoz("oquvchilar")
-
+findDoublers("basfdgtee");
+console.log(findDoublers("basfdgtee"));

@@ -198,7 +198,7 @@
 // MITASK F
 
 function findDoublers(word) {
-  let words = [...word];
+  let words = [...word].sort();
   let sanoq = 0;
   words.some((ele, index) => {
     if (ele == words[index + 1]) {
@@ -211,5 +211,5 @@ function findDoublers(word) {
     return false;
   }
 }
-findDoublers("basfdgtee");
-console.log(findDoublers("basfdgtee"));
+findDoublers("basfdgtease");
+console.log(findDoublers("basfdgtease"));
